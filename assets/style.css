@@ -126,6 +126,11 @@ h2 { margin: 0; font: 600 40px/1.1 var(--title); letter-spacing: -0.02em; color:
 .doc .intro { padding: 24px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); margin-bottom: 8px; }
 .doc .intro p:last-child { margin-bottom: 0; }
 
+/* Link discreto para as outras versões (política e termos) */
+.doc .doc-lang { margin: 0 0 20px; font-size: 13px; color: var(--faint); }
+.doc .doc-lang a { color: var(--muted); text-decoration: none; }
+.doc .doc-lang a:hover { color: var(--white); text-decoration: underline; }
+
 /* Rodapé */
 .footer { border-top: 1px solid var(--line); }
 .footer .wrap { padding-top: 32px; padding-bottom: 32px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 14px; color: var(--faint); }
