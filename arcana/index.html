@@ -3,81 +3,83 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arcana — Tarot</title>
-  <meta name="description" content="Arcana: free tarot app by T7X Technologies LLC. Card of the day, spreads and meanings in PT, EN and ES.">
+  <title>Arcana — Daily tarot</title>
+  <meta name="description" content="Arcana: free daily tarot app by T7X Technologies LLC. Card of the day, spreads and the meaning of all 78 cards in EN, PT and ES.">
+  <meta name="theme-color" content="#07080C">
   <link rel="icon" href="/assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="/assets/style.css">
+  <script>window.PAGE_TITLES = { pt: "Arcana — Tarot diário", en: "Arcana — Daily tarot", es: "Arcana — Tarot diario" };</script>
   <script src="/assets/lang.js"></script>
 </head>
 <body>
-  <header class="top">
-    <div class="wrap">
-      <a class="brand" href="/">T7X <span>Technologies</span></a>
-      <div class="lang" role="group" aria-label="Language">
+  <header class="wrap top">
+    <a class="brand" href="/">
+      <span class="brand-mark">T7</span>
+      <span class="brand-name">T7X Technologies</span>
+    </a>
+    <nav class="nav" aria-label="Menu">
+      <a href="/#sobre"><span data-l="pt">Sobre</span><span data-l="en">About</span><span data-l="es">Nosotros</span></a>
+      <a href="/#apps">Apps</a>
+      <a href="/#principios"><span data-l="pt">Princípios</span><span data-l="en">Principles</span><span data-l="es">Principios</span></a>
+      <a href="/#contato"><span data-l="pt">Contato</span><span data-l="en">Contact</span><span data-l="es">Contacto</span></a>
+      <span class="lang" role="group" aria-label="Idioma / Language / Idioma">
         <button type="button" data-set="pt">PT</button>
         <button type="button" data-set="en">EN</button>
         <button type="button" data-set="es">ES</button>
-      </div>
-    </div>
+      </span>
+    </nav>
   </header>
 
   <main>
-    <div class="wrap">
-      <img class="hero-icon" src="/assets/arcana-icon.png" alt="Arcana" width="112" height="112">
-      <h1>Arcana</h1>
-
-      <div data-l="pt">
-        <p class="lead">Tarot gratuito, bonito e simples. Tire suas cartas e leia o significado de cada uma.</p>
-        <ul class="features">
-          <li>Carta do dia</li>
-          <li>Tiragens de uma carta, três cartas e Cruz Celta</li>
-          <li>Significados das 78 cartas, inclusive invertidas</li>
-          <li>Tiragens salvas no seu celular</li>
-          <li>Em português, inglês e espanhol</li>
-        </ul>
-        <p class="muted">Sem cadastro. Gratuito, com anúncios.</p>
-      </div>
-      <div data-l="en">
-        <p class="lead">Free, beautiful and simple tarot. Draw your cards and read what each one means.</p>
-        <ul class="features">
-          <li>Card of the day</li>
-          <li>One-card, three-card and Celtic Cross spreads</li>
-          <li>Meanings for all 78 cards, including reversed</li>
-          <li>Readings saved on your phone</li>
-          <li>In English, Portuguese and Spanish</li>
-        </ul>
-        <p class="muted">No sign-up. Free, supported by ads.</p>
-      </div>
-      <div data-l="es">
-        <p class="lead">Tarot gratis, bonito y sencillo. Saca tus cartas y lee el significado de cada una.</p>
-        <ul class="features">
-          <li>Carta del día</li>
-          <li>Tiradas de una carta, tres cartas y Cruz Celta</li>
-          <li>Significados de las 78 cartas, también invertidas</li>
-          <li>Tiradas guardadas en tu móvil</li>
-          <li>En español, inglés y portugués</li>
-        </ul>
-        <p class="muted">Sin registro. Gratis, con anuncios.</p>
-      </div>
-
-      <p>
-        <a class="button" href="/arcana/privacy/">
-          <span data-l="pt">Política de privacidade</span><span data-l="en">Privacy policy</span><span data-l="es">Política de privacidad</span>
-        </a>
-        <a class="button ghost" href="mailto:t7xtechnologies@proton.me?subject=Arcana">
-          <span data-l="pt">Contato</span><span data-l="en">Contact</span><span data-l="es">Contacto</span>
-        </a>
-      </p>
+  <section class="wrap hero">
+    <img class="app-hero-icon" src="/assets/arcana-icon.png" alt="Arcana" width="96" height="96">
+    <span class="pill"><span data-l="pt">Tarot diário · Android · iOS em breve</span><span data-l="en">Daily tarot · Android · iOS coming soon</span><span data-l="es">Tarot diario · Android · iOS próximamente</span></span>
+    <h1 class="page">Arcana</h1>
+    <p class="lead"><span data-l="pt">Tarot gratuito, bonito e simples. Tire suas cartas e leia o significado de cada uma.</span><span data-l="en">Free, beautiful and simple tarot. Draw your cards and read what each one means.</span><span data-l="es">Tarot gratis, bonito y sencillo. Saca tus cartas y lee el significado de cada una.</span></p>
+    <div class="actions">
+      <span class="badge" style="align-self: center"><span data-l="pt">Em breve no Google Play</span><span data-l="en">Coming soon to Google Play</span><span data-l="es">Próximamente en Google Play</span></span>
+      <a class="btn" href="/arcana/privacy/"><span data-l="pt">Política de privacidade</span><span data-l="en">Privacy policy</span><span data-l="es">Política de privacidad</span></a>
     </div>
+  </section>
+
+  <div class="wrap"><div class="rule"></div></div>
+
+  <section class="wrap about">
+    <div class="stack">
+      <span class="eyebrow"><span data-l="pt">O QUE TEM NO APP</span><span data-l="en">WHAT’S INSIDE</span><span data-l="es">QUÉ HAY EN LA APP</span></span>
+      <h2><span data-l="pt">Suas cartas, no seu ritmo.</span><span data-l="en">Your cards, at your pace.</span><span data-l="es">Tus cartas, a tu ritmo.</span></h2>
+    </div>
+    <ul class="features">
+      <li><span data-l="pt">Carta do dia</span><span data-l="en">Card of the day</span><span data-l="es">Carta del día</span></li>
+      <li><span data-l="pt">Tiragens de uma carta, três cartas e Cruz Celta</span><span data-l="en">One-card, three-card and Celtic Cross spreads</span><span data-l="es">Tiradas de una carta, tres cartas y Cruz Celta</span></li>
+      <li><span data-l="pt">Significados das 78 cartas, inclusive invertidas</span><span data-l="en">Meanings for all 78 cards, including reversed</span><span data-l="es">Significados de las 78 cartas, también invertidas</span></li>
+      <li><span data-l="pt">Tiragens salvas no seu celular</span><span data-l="en">Readings saved on your phone</span><span data-l="es">Tiradas guardadas en tu móvil</span></li>
+      <li><span data-l="pt">Em português, inglês e espanhol</span><span data-l="en">In English, Portuguese and Spanish</span><span data-l="es">En español, inglés y portugués</span></li>
+      <li><span data-l="pt">Sem cadastro. Gratuito, com anúncios.</span><span data-l="en">No sign-up. Free, supported by ads.</span><span data-l="es">Sin registro. Gratis, con anuncios.</span></li>
+    </ul>
+  </section>
+
+  <section id="contato" class="wrap contact-wrap">
+    <div class="contact">
+      <div class="stack" style="gap: 10px">
+        <h2><span data-l="pt">Vamos conversar.</span><span data-l="en">Let’s talk.</span><span data-l="es">Hablemos.</span></h2>
+        <p><span data-l="pt">Parcerias, imprensa ou suporte dos apps.</span><span data-l="en">Partnerships, press or app support.</span><span data-l="es">Alianzas, prensa o soporte de las apps.</span></p>
+      </div>
+      <a class="btn" href="mailto:t7xtechnologies@proton.me">t7xtechnologies@proton.me</a>
+    </div>
+  </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="wrap">
-      <span>© 2026 <a href="/">T7X Technologies LLC</a></span>
-      <a href="mailto:t7xtechnologies@proton.me">t7xtechnologies@proton.me</a>
+      <span>© 2026 T7X Technologies LLC · Orlando, Florida, USA</span>
+      <span class="footer-links">
+        <a href="/arcana/privacy/"><span data-l="pt">Política de privacidade</span><span data-l="en">Privacy policy</span><span data-l="es">Política de privacidad</span></a>
+        <a href="/terms/"><span data-l="pt">Termos de uso</span><span data-l="en">Terms of use</span><span data-l="es">Términos de uso</span></a>
+      </span>
     </div>
   </footer>
 </body>
